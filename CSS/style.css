@@ -1,104 +1,22 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-}
-
 body {
-    background-image: url(../images/white-waves.png);
+  background-image: url(../images/background.jpg)
 }
 
-h1{
-    font-family: "Times New Roman", Times, serif;
-    color: darkblue;
-    
+body, h1,h2,h3,h4,h5,h6 {
+  font-family: "Montserrat", sans-serif
 }
-h2 {
-    font-family: 'Times New Roman', Times, serif;
-    color: lightyellow;
-    padding: 1rem;
+.w3-row-padding img {
+  margin-bottom: 12px
 }
 
-
-
-li {
-    margin: 1rem;
+.w3-sidebar {
+  width: 120px;background: #222;
 }
 
-a {
-    font-size: 20px;
+#main {
+  margin-left: 120px
 }
 
-
-
-.jumbotron {
-    border: 1px solid darkblue;
+@media only screen and (max-width: 600px) {
+  #main {margin-left: 0}
 }
-
-hr.border {
-    color: darkblue;
-}
-
-p {
-    line-height: 2;
-    margin: auto;
-    font-size: 20px;
-}
-
-.sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: navy;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-  }
-  
-  /* Sidebar links */
-  .sidebar a {
-    display: block;
-    color:white;
-    padding: 16px;
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 20px;
-  }
-  
-  .sidebar a.active {
-    background-color: lightyellow;
-    color:navy;
-  }
-
-  
-  .sidebar a:hover:not(.active) {
-    background-color:lightyellow;
-    color: navy;
-  }
-  
-  div.content {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-  }
-  
-  @media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
-  }
-  
-  @media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
-  }
-
-  #projects, #contact {
-      display: none;
-  }
