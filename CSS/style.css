@@ -1,12 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body {
     background-image: url(../images/white-waves.png);
 }
 
-h2 {
+h2, h1{
     font-family: "Times New Roman", Times, serif;
     color: darkblue;
     
 }
+
+span {
+    background-color: lightyellow;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
 
 .wrapper {
     display: flex;
@@ -34,14 +50,30 @@ a {
     font-size: 20px;
 }
 
-#sideBarHeader {
+#sideBarHeader, #dropdownNav, #aboutMeTitle {
     background-color: lightyellow;
 }
 
-#dropdownNav {
-    background-color: lightyellow;
-}
 
 .dropdown-item {
     font-family: "Times New Roman", Times, serif;
+}
+
+#aboutMe {
+    margin-left: 250px;
+}
+
+.jumbotron {
+    border: 1px solid darkblue;
+}
+
+hr.border {
+    color: darkblue;
+}
+
+p {
+    line-height: 2;
+}
+img {
+    height: 200px;
 }
