@@ -7,10 +7,15 @@ body {
     background-image: url(../images/white-waves.png);
 }
 
-h2, h1{
+h1{
     font-family: "Times New Roman", Times, serif;
     color: darkblue;
     
+}
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: lightyellow;
+    padding: 1rem;
 }
 
 
@@ -57,12 +62,14 @@ p {
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
+    font-size: 20px;
   }
   
   .sidebar a.active {
     background-color: lightyellow;
     color:navy;
   }
+
   
   .sidebar a:hover:not(.active) {
     background-color:lightyellow;
@@ -90,4 +97,8 @@ p {
       text-align: center;
       float: none;
     }
+  }
+
+  #projects, #contact {
+      display: none;
   }
