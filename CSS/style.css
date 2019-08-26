@@ -13,34 +13,7 @@ h2, h1{
     
 }
 
-span {
-    background-color: lightyellow;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    margin: 0;
-}
 
-
-.wrapper {
-    display: flex;
-    width: 100%;
-}
-
-#sidebar {
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    z-index: 999;
-    background: darkblue;
-    color: #fff;
-    transition: all 0.3s;
-    font-family: "Times New Roman", Times, serif;
-}
 
 li {
     margin: 1rem;
@@ -50,18 +23,7 @@ a {
     font-size: 20px;
 }
 
-#sideBarHeader, #dropdownNav, #aboutMeTitle {
-    background-color: lightyellow;
-}
 
-
-.dropdown-item {
-    font-family: "Times New Roman", Times, serif;
-}
-
-#aboutMe {
-    margin-left: 250px;
-}
 
 .jumbotron {
     border: 1px solid darkblue;
@@ -73,7 +35,59 @@ hr.border {
 
 p {
     line-height: 2;
+    margin: auto;
+    font-size: 20px;
 }
-img {
-    height: 200px;
-}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: navy;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color:white;
+    padding: 16px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+  
+  .sidebar a.active {
+    background-color: lightyellow;
+    color:navy;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color:lightyellow;
+    color: navy;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
