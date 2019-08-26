@@ -37,3 +37,11 @@ a {
 #sideBarHeader {
     background-color: lightyellow;
 }
+
+#dropdownNav {
+    background-color: lightyellow;
+}
+
+.dropdown-item {
+    font-family: "Times New Roman", Times, serif;
+}

@@ -1,13 +1,7 @@
 $(document).ready(function () {
 
-    $("#sidebar").mCustomScrollbar({
-        theme: "minimal"
+    $("#navbarDropdownMenuLink").on("click", function(){
+        $("#dropdownNav").toggle();
     });
-
-    $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').toggleClass('active');
-    });
-
-
 });
 
