@@ -17,6 +17,12 @@ body {
   }
 }
 
+#projectImg {
+  height: 500px;
+  width: auto;
+
+}
+
 h1,
 h2,
 h3,
@@ -46,6 +52,7 @@ p.lead {
   font-size: 1.15rem;
   font-weight: 400;
 }
+
 
 .subheading {
   text-transform: uppercase;
