@@ -12,17 +12,6 @@ body {
   }
 }
 
-#projectImg {
-  height: 300px;
-  width: 300px;
-
-}
-
-#profileImg {
-  width: auto;
-  height: auto;
-}
-
 h1,
 h2,
 h3,
@@ -52,7 +41,7 @@ p.lead {
   font-size: 1.15rem;
   font-weight: 400;
 }
-img.img-profile{
+.img-profile{
   width: 300px;
 }
 
