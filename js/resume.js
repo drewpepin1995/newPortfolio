@@ -100,4 +100,26 @@
 
   });
 
+  $("#react").on("click", function () {
+    $("#skillsDiv").empty();
+
+    let skillDiv = $("<div>")
+      .append($("<h2>").text("React"));
+
+
+    $("#skillsDiv").append(skillDiv);
+
+  });
+
+  $("#python").on("click", function () {
+    $("#skillsDiv").empty();
+
+    let skillDiv = $("<div>")
+      .append($("<h2>").text("Python"));
+
+
+    $("#skillsDiv").append(skillDiv);
+
+  });
+
 })(jQuery); 
